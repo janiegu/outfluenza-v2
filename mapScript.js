@@ -1,10 +1,10 @@
-var width = 800,
-    height = 500,
+var mapWidth = 780,
+    mapHeight = 500,
 	centered;
 
 var projection = d3.geo.albersUsa()
 	.scale(950)
-	.translate([width / 2, height / 2]);
+	.translate([mapWidth / 2, mapHeight / 2]);
 	
 var rateById = d3.map();
 
@@ -28,13 +28,13 @@ queue()
 
 function readyState(error, us) {	
   var svg = d3.select("#interactiveMap").append("svg")
-  	.attr("width", width)
-	.attr("height", height);
+  	.attr("width", mapWidth)
+	.attr("height", mapHeight);
 
   svg.append("rect")
 	.attr("class", "background")
-	.attr("width", width)
-	.attr("height", height)
+	.attr("width", mapWidth)
+	.attr("height", mapHeight)
 	.on("click", clicked);
 
   g = svg.append("g")
@@ -57,13 +57,13 @@ function readyCounty(error, lol, us) {
 	if (map != null) map.remove();
 	
   var svg = d3.select("#interactiveMap").append("svg")
-	.attr("width", width)
-	.attr("height", height);
+	.attr("width", mapWidth)
+	.attr("height", mapHeight);
 
   svg.append("rect")
 	.attr("class", "background")
-	.attr("width", width)
-	.attr("height", height)
+	.attr("width", mapWidth)
+	.attr("height", mapHeight)
 	.on("click", clicked);
 
   g = svg.append("g")
@@ -93,8 +93,8 @@ function clicked(d) {
 	    k = 4;
 	    centered = d;
 	  } else {
-	    x = width / 2;
-	    y = height / 2;
+	    x = mapWidth / 2;
+	    y = mapHeight / 2;
 	    k = 1;
 	    centered = null;
 	  }
@@ -104,7 +104,7 @@ function clicked(d) {
 
 	  g.transition()
 	      .duration(750)
-	      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+	      .attr("transform", "translate(" + mapWidth / 2 + "," + mapHeight / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
 	      .style("stroke-width", 1.5 / k + "px");
 	  
 	  var bubble = new Opentip(g.selectAll("path"));

@@ -1,0 +1,240 @@
+body {
+	background-color: #fff;
+	font-family: "franklin-gothic-urw",Helvetica,Arial,sans-serif,sans-serif;
+	font-size: 13px;
+	color: #555;
+	min-width: 750px;
+}
+
+.border {
+	border-top: 3px solid #c0c0c0;
+}
+
+.emphasis {
+	color: #4FD5D6;
+	font-weight: 900;
+	font-family: helvetica;
+	font-size: 15px;
+}
+
+.header {
+	background-color: #343434;
+	height: 34px;
+	position: relative;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#statBubbles {
+	position: relative;
+	margin-left: 40px;
+}
+
+.section {
+	padding-bottom: 40px;
+}
+
+.textCircle {
+	-webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(PIE.htc);
+
+    width: 180px;
+    height: 180px;
+    padding: 8px;
+
+    background: #fff;
+    border: 3px solid black;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+    
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.maintitle {
+	font-family: helvetica;
+    font-size: 20px;
+    line-height: 1.0em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: 7px;
+    width: 100%;
+}
+
+.subtitle {
+    font-family: helvetica;
+    font-size: 15px;
+    line-height: 1.0em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #000;
+    font-weight: bolder;
+}
+
+.graphtitle {
+	color: #c0c0c0;
+	font-family: "franklin-gothic-urw",Helvetica,Arial,sans-serif,sans-serif;
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+/* Formatting for sortable bar chart. */
+.axis text {
+	font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #4FD5D6;
+  fill-opacity: .9;
+}
+ 
+.x.axis path {
+  display: none;
+}
+ 
+label {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  font-family: helvetica;
+  font-size: 10px;
+  float: left;
+}
+
+#regionName {
+	display: inline;
+	text-align: center;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	
+	/* BEWARE HARDCODING */
+	margin-left: 150px;
+	margin-bottom: 20px;
+}
+
+#labelTitle {
+	float: left;
+	/* BEWARE HARDCODING */
+	margin-left: 4px;
+}
+
+#timeChartContainer {
+	position: relative;
+}
+
+#checkbox {
+	float: left;
+}
+
+#ageDistribution {
+	position: relative;
+	width: 500px;
+}
+
+.left {
+	float: left;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+#genderSplit {
+	/* BEWARE HARDCODING */
+	margin-left: 70px;
+}
+
+/* Top drugs table. */
+#rounded-corner{
+    font-family:"Helvetica Neue", "Open Sans";
+    font-size:12px;
+    width:450px;
+    text-align:left;
+    border-collapse:collapse;
+    margin:20px;
+}
+
+#rounded-corner th{
+    font-weight:normal;
+    font-size:13px;
+    color: white;
+    background:#FE7569;
+    padding:8px;
+}
+
+#rounded-corner td{
+    background:	#FFC8C3;
+    border-top:1px solid #fff;
+    color:black;
+    padding:8px;
+}
+
+#rounded-corner tbody tr:hover td{
+    background:#CDFFFF;
+}
+
+.drugRank {
+	font-weight: bold;
+	text-align: right;
+}
+
+.drugData {
+	text-align: center;
+}
+
+/* Tabs for time lapse graph. */
+#flip-tabs{
+	/* BEWARE HARDCODING */
+	margin: 10px 0 0 40px;
+	position:absolute;
+}
+
+#flip-navigation{
+	margin:0 0 10px; padding:0; 
+	list-style:none;
+}
+
+#flip-navigation li{ 
+	display:inline; 
+}
+
+#flip-navigation li a{
+	text-decoration:none; 
+	padding:6px 12px; 
+	margin-right:0px;
+	background:#f9f9f9;
+	color:#333; outline:none;
+	font-family:Helvetica; 
+	font-size:8px; 
+	text-transform:uppercase;
+	letter-spacing: 0.2em;
+}
+
+#flip-navigation li a:hover{
+	background:#999; 
+	color:#f0f0f0;
+}
+
+#flip-navigation li.selected a{
+	background:#999;
+	color:#f0f0f0;
+}

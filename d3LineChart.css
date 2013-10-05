@@ -1,0 +1,40 @@
+.data-line {
+	stroke: #4FD5D6;
+	stroke-width: 2;
+	fill: none;
+	stroke-dasharray: 0;
+}
+
+path {
+	stroke: #eee;
+	stroke-width: 2;
+	stroke-dasharray: 0;
+	fill: none;
+}
+
+.area {
+  	fill: #cdffff;
+}
+
+text {
+	font-family: Arial;
+	font-size: 8pt;
+	fill: #787878;
+}
+
+line {
+	stroke: #CDCDCD;
+	stroke-width: 0.5;
+	/* stroke-dasharray: 3 3; */
+	fill: none;
+}
+
+.data-point {
+	stroke: #4FD5D6;
+	stroke-width: 2;
+	fill: #FFF;
+}
+
+#chart {
+        margin: 10px;
+}

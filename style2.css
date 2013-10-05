@@ -1,16 +1,11 @@
+body {
+	min-width: 1050px;
+}
+
 .background {
 	fill: none;
 	color: red;
 	pointer-events: all;
-}
-
-body {
-	background-color: #fff;
-	font-family: helvetica;
-	font-size: 13px;
-	color: #555;
-	min-width: 1150px;
-	position: relative;
 }
 
 /* minimal
@@ -66,7 +61,6 @@ button.minimal {
     font-size: 25px;
     font-weight: 100;
     line-height: 1.4em;
-
 }
 
 .subtitle {
@@ -111,10 +105,6 @@ button {
 	margin-top: 40px;
 }
 
-#interactiveMap {
-	margin-top: -65px;
-}
-
 .q0-9 { fill: #EDFBFB; }
 .q1-9 { fill: #DCF7F7; }
 .q2-9 { fill: #B9EEEF; }
@@ -124,3 +114,71 @@ button {
 .q6-9 { fill: #3FAAAB; }
 .q7-9 { fill: #379596; }
 .q8-9 { fill: #286A6B; }
+
+#statsContent {
+	float: left;
+	
+	/* BEWARE HARDCODING */
+	margin-top: -560px;
+	margin-left: 20px;
+}
+
+#statsContainer {
+	position: inline;
+	height: 600px;
+	overflow: scroll !important;
+	width: 450px;
+}
+
+#mapContainer h2.section-heading {
+	margin: 0;
+}
+
+#mapContainer {
+}
+
+#nationalTrends {
+ 	display: none; 
+}
+
+#stateTrends {
+/* 	display: none; */
+}
+
+#border {
+	float: left;
+}
+
+/* Formatting for fact columns */
+/* Column formatting for resume page */
+.columns {
+	line-height: 150%;
+	margin-top: 5px;
+}
+
+.columns .column { 
+	position: relative;
+}
+
+.columns .left {
+	width: 65px;
+	float: left;
+}
+	
+.columns .right {
+	margin-left: 75px;
+	width: 300px;
+	/* BEWARE HARDCODING */
+	height: 75px;
+	margin-top: 10px;
+}
+
+#colorKey {
+	width: 100px;
+	position: absolute;
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+	
+	/* BEWARE HARDCODING */
+	top: 450px;
+	left: 670px;
+}

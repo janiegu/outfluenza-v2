@@ -5,6 +5,9 @@
 <link href="./style.css" media="all" rel="stylesheet" type="text/css">
 <link href="./style2.css" media="all" rel="stylesheet" type="text/css">
 <link href="./giantStyle.css" media="all" rel="stylesheet" type="text/css">
+<link href="./statsStyle.css" media="all" rel="stylesheet" type="text/css">
+<link href="./d3LineChart.css" media="all" rel="stylesheet" type="text/css">
+<link href="./tipsy.css" media="all" rel="stylesheet" type="text/css">
 <script src="./script.js" type="text/javascript"></script><style type="text/css"></style>
 <script src="./script2.js" type="text/javascript"></script>
 <script>
@@ -39,19 +42,73 @@ window.Region = "us"
 </div>
 </div>
 </div>
+<div class="row">
+<div class="span10" id="mapContainer">
+	<div id="interactiveMap">
+  		<!-- to be populated by Javascript code -->
+  	</div>
+</div>
+<div id="statsContainer" class="span3">
+	<img src="./leftBorder.png" id="border" height="600px">
+	<div id="statsContent">
+		<div id="regionName">NEW JERSEY</div>
+		<div class="graphtitle">General Statistics</div>
+		<div class="columns">
+		<div class="left column">
+			<img src="./calendar.png">
+		</div>
+		<div class="right column">
+			The number of influenza cases detected increased <span class="emphasis">3.2%</span> from this time last year.
+		</div>
+		</div>
+		<div class="columns">
+		<div class="left column">
+			<img src="./syringe.png">
+		</div>
+		<div class="right column">
+			Over the last month, there has been an average of <span class="emphasis">5 new cases</span> per capita daily.
+		</div>
+		</div>
+		<div class="columns">
+		<div class="left column">
+			<img src="./googleMaps.png">
+		</div>
+		<div class="right column">
+		<br>
+			The nearest outbreak is <span class="emphasis">5.3 miles</span> away in 07751.
+		</div>
+		</div>
+		<div class="graphtitle">Change in number of influenza prescriptions over time</div>
+  		<div id="timeChartContainer">
+  		<div id="flip-tabs">  
+		    <ul id="flip-navigation" >  
+		        <li><a href="#" id="tab-0"  >Week</a></li>  
+		        <li class="selected"><a href="#" id="tab-1" >Month</a></li>  
+		        <li><a href="#" id="tab-2" >Year</a></li>  
+		    </ul>   
+		</div>  
+    	<div id="timeChart"></div>
+    	<div class="graphtitle">Gender split of infected</div>
+    	<div id="genderSplit"></div>
+		<div class="graphtitle">Distribution of infected ages</div>
+    	<div id="ageDistribution">
+    	<label><input type="checkbox" id="checkbox"><span id="labelTitle">Sort values</span></label>
+    	</div>
+    	</div>
+	</div>
+</div>
+</div>
+<div id="colorKey">
+	<img src="colorKey.png">
+</div>
 <div class="main">
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<script src="http://d3js.org/queue.v1.min.js"></script>
 	<script src="http://d3js.org/topojson.v1.min.js"></script>
   	<script type="text/javascript" src="./mapScript.js"></script>
-</div>
-<div class="row">
-<div class="span10" id="mapContainer">
-	<h2 class="section-heading">Influenza across the US</h2>
-	<div id="interactiveMap">
-  		<!-- to be populated by Javascript code -->
-  	</div>
-</div>
+  	<script src="./statsScript.js" type="text/javascript"></script>
+  	<script src="./jquery.tipsy.js" type="text/javascript"></script>
+    <script src="./d3LineChart.js" type="text/javascript"></script>
 </div>
 </body>
 </html>
