@@ -1,3 +1,7 @@
+body {
+	min-width: 1250px;
+}
+
 .nav {
 	letter-spacing: 3px;
 }
@@ -17,6 +21,20 @@
 .span6 #aboutSection {
 	font-size: 14px;
 	line-height: 150%;
+}
+
+#header #zipSearch {
+	top: 75px;
+	right: 525px;
+}
+
+#searchInstructions {
+	color: #606060;
+	position: absolute;
+	
+	/* BEWARE HARDCODING */
+	left: 20px;
+	top: 85px;
 }
 
 #header {

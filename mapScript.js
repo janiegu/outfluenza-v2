@@ -86,17 +86,28 @@ function readyCounty(error, lol, us) {
 function clicked(d) {
 	var x, y, k;
 	
+	// if zooming in on state
 	if (d && centered !== d) {
 	    var centroid = path.centroid(d);
 	    x = centroid[0];
 	    y = centroid[1];
 	    k = 4;
 	    centered = d;
-	  } else {
+	    
+		$("#nationalTrends").css("display", "none");
+		$("#stateTrends").fadeIn(2000);
+		$("#mapTitle").css("visibility", "hidden");
+	  } 
+	
+	// if zooming out
+	else {
 	    x = mapWidth / 2;
 	    y = mapHeight / 2;
 	    k = 1;
 	    centered = null;
+		$("#stateTrends").css("display", "none");
+		$("#nationalTrends").fadeIn(2000);
+		$("#mapTitle").css("visibility", "visible");
 	  }
 
 	  g.selectAll("path")

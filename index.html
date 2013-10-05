@@ -34,24 +34,31 @@ window.Region = "us"
 </li>
 </ul>
 </div>
-<div class="span1">
-<form class="search">
+</div>
+<form class="search" id="zipSearch">
 <input class="search-box" placeholder="Enter ZIP or State" type="text">
 <i class="icon-search"></i>
 </form>
 </div>
-</div>
+<div id="searchInstructions">
+	Search here or click on the map to get more detailed statistics about a specific region.
 </div>
 <div class="row">
 <div class="span10" id="mapContainer">
+<h2 class="section-heading" id="mapTitle">Influenza across the US</h2>
 	<div id="interactiveMap">
   		<!-- to be populated by Javascript code -->
   	</div>
 </div>
 <div id="statsContainer" class="span3">
+	<div class="filler"></div>
 	<img src="./leftBorder.png" id="border" height="600px">
-	<div id="statsContent">
-		<div id="regionName">NEW JERSEY</div>
+	<div class="statsContent" id="nationalTrends">
+	<div class="regionName">National Trends</div><br><br>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi orci, mollis et felis quis, tristique congue metus. Nam suscipit felis in tristique tincidunt. Nulla a vehicula libero. Vestibulum tempor sem id orci vulputate suscipit sed sit amet nisi. Etiam nec nisl tincidunt, feugiat nulla luctus, rutrum tellus. Pellentesque massa tortor, consectetur nec ante sed, molestie condimentum augue. <br><br>Etiam cursus varius magna, ac tincidunt mi dignissim sed. Ut sit amet vehicula velit. Etiam libero magna, pretium non turpis a, dapibus condimentum ligula. Cras venenatis, odio at congue tincidunt, leo quam tempor neque, a imperdiet lacus leo et ipsum. Suspendisse ut justo sit amet ligula condimentum tristique. Sed eu pretium quam. Curabitur vel risus placerat, tristique ligula et, facilisis sem. Suspendisse volutpat libero in lacus luctus rutrum. Morbi luctus consectetur ipsum at pharetra. Fusce erat dolor, pretium sit amet sem quis, cursus tincidunt magna.
+	</div>
+	<div class="statsContent" id="stateTrends">
+		<div class="regionName">NEW JERSEY</div>
 		<div class="graphtitle">General Statistics</div>
 		<div class="columns">
 		<div class="left column">

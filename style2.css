@@ -1,7 +1,3 @@
-body {
-	min-width: 1050px;
-}
-
 .background {
 	fill: none;
 	color: red;
@@ -102,7 +98,11 @@ button {
 }
 
 #mapContainer {
-	margin-top: 40px;
+	margin-top: 50px;
+}
+
+#interactiveMap {
+	margin-top: -30px;
 }
 
 .q0-9 { fill: #EDFBFB; }
@@ -115,8 +115,9 @@ button {
 .q7-9 { fill: #379596; }
 .q8-9 { fill: #286A6B; }
 
-#statsContent {
+.statsContent {
 	float: left;
+	color: #606060;
 	
 	/* BEWARE HARDCODING */
 	margin-top: -560px;
@@ -138,11 +139,11 @@ button {
 }
 
 #nationalTrends {
- 	display: none; 
+/*  	display: none;  */
 }
 
 #stateTrends {
-/* 	display: none; */
+	display: none;
 }
 
 #border {
