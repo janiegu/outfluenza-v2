@@ -1,0 +1,51 @@
+.nav {
+	letter-spacing: 3px;
+}
+
+.mainTitle {
+	font-family: helvetica;
+	font-size: 36px;
+	font-weight: 300;
+	letter-spacing: 7px;
+	margin-top: 8px;
+}
+
+.mainTitle a {
+	color: #4FD5D6;
+}
+
+.span6 #aboutSection {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+#header {
+	border-bottom: 1px solid #ccc;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+.tracking {
+	float: center;
+}
+
+.divider {
+	margin: 20px 0;
+	border-top: 1px solid #ccc;
+}
+
+.iconTitles {
+	font-family: "franklin-gothic-urw", helvetica, ariel;
+	color: #4FD5D6;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 3px;
+}
+
+.iconBlurbs {
+/* 	color: #606060; */
+	color: #999;
+}
