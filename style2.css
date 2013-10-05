@@ -71,13 +71,11 @@ button.minimal {
 
 .subtitle {
     font-family: helvetica;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.0em;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #000;
-    font-weight: bolder;
+    color: #606060;
 }
 
 .box {
@@ -109,12 +107,20 @@ button {
   stroke-linejoin: round;
 }
 
-.q0-9 { fill:rgb(247,251,255); }
-.q1-9 { fill:rgb(222,235,247); }
-.q2-9 { fill:rgb(198,219,239); }
-.q3-9 { fill:rgb(158,202,225); }
-.q4-9 { fill:rgb(107,174,214); }
-.q5-9 { fill:rgb(66,146,198); }
-.q6-9 { fill:rgb(33,113,181); }
-.q7-9 { fill:rgb(8,81,156); }
-.q8-9 { fill:rgb(8,48,107); }
+#mapContainer {
+	margin-top: 40px;
+}
+
+#interactiveMap {
+	margin-top: -65px;
+}
+
+.q0-9 { fill: #EDFBFB; }
+.q1-9 { fill: #DCF7F7; }
+.q2-9 { fill: #B9EEEF; }
+.q3-9 { fill: #95E6E6; }
+.q4-9 { fill: #72DDDE; }
+.q5-9 { fill: #4FD5D6; }
+.q6-9 { fill: #3FAAAB; }
+.q7-9 { fill: #379596; }
+.q8-9 { fill: #286A6B; }

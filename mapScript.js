@@ -28,6 +28,8 @@ queue()
 
 function readyState(error, us) {	
   var svg = d3.select("#interactiveMap").append("svg")
+  	.attr("width", width)
+	.attr("height", height);
 
   svg.append("rect")
 	.attr("class", "background")
@@ -88,7 +90,7 @@ function clicked(d) {
 	    var centroid = path.centroid(d);
 	    x = centroid[0];
 	    y = centroid[1];
-	    k = 8;
+	    k = 4;
 	    centered = d;
 	  } else {
 	    x = width / 2;
