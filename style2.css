@@ -98,7 +98,7 @@ button {
 }
 
 #mapContainer {
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 #interactiveMap {
@@ -118,6 +118,7 @@ button {
 .statsContent {
 	float: left;
 	color: #606060;
+	width: 470px;
 	
 	/* BEWARE HARDCODING */
 	margin-top: -560px;
@@ -128,7 +129,11 @@ button {
 	position: inline;
 	height: 600px;
 	overflow: scroll !important;
-	width: 450px;
+	width: 500px;
+}
+
+#statsContainer .ui-widget {
+	font-family: "franklin-gothic-urw", helvetica, ariel;
 }
 
 #mapContainer h2.section-heading {
@@ -168,7 +173,7 @@ button {
 	
 .columns .right {
 	margin-left: 75px;
-	width: 300px;
+	width: 330px;
 	/* BEWARE HARDCODING */
 	height: 75px;
 	margin-top: 10px;
@@ -182,4 +187,24 @@ button {
 	/* BEWARE HARDCODING */
 	top: 450px;
 	left: 670px;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+}
+
+table {
+	font-size: 1em;
+}
+
+.demo-description {
+	clear: both;
+	padding: 12px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
 }

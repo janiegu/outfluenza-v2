@@ -1,5 +1,5 @@
 body {
-	min-width: 1250px;
+	min-width: 1310px;
 }
 
 .nav {
@@ -24,8 +24,15 @@ body {
 }
 
 #header #zipSearch {
-	top: 75px;
-	right: 525px;
+	top: 78px;
+	left: 500px;
+	position: absolute;
+}
+
+#header #zipSearch i.icon-search {
+	position: static;
+	margin-left: -20px;
+	top: 1px;
 }
 
 #searchInstructions {
@@ -35,6 +42,20 @@ body {
 	/* BEWARE HARDCODING */
 	left: 20px;
 	top: 85px;
+}
+
+#timeSlider {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#timeSlider p {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: helvetica;
+	letter-spacing: 4px;
+	/* BEWARE HARDCODING */
+	margin-left: 20px;
 }
 
 #header {
