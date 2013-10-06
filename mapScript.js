@@ -121,3 +121,24 @@ function clicked(d) {
 	  var bubble = new Opentip(g.selectAll("path"));
 	  bubble.show();
 }
+
+/* Time lapse slider */
+$(function() {
+    $( "#slider" ).slider({
+      value: 7,
+      min: 0,
+      max: 14,
+      step: 1,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+      }
+    });
+    $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
+  });
+
+/* Accordion stats */
+$(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  });
